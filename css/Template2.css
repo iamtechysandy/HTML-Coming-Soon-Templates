@@ -1,0 +1,69 @@
+@font-face {
+    font-family: poppinBold;
+    src: url(Poppins.ttf);
+}
+
+@font-face {
+    font-family: poppin;
+    src: url(PoppinsSimple.ttf);
+}
+
+body {
+    background-color: #726e6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: poppin;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px; /* Adjusted width to be responsive */
+    width: 90%; /* Added to ensure responsiveness */
+    padding: 50px;
+    border-radius: 1rem;
+    color: #7A1714;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container p {
+    text-align: center;
+}
+.img img {
+    width: 150px;
+    height: 150px;
+}
+
+.social-media {
+    margin-top: 50px; /* Reduced margin for smaller screens */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center; /* Center align social media icons */
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #7A1714;
+    font-size: 2rem;
+}
+
+.social-media a:hover {
+    font-size: 2.1rem;
+}
+
+@media screen and (max-width: 600px) {
+    /* Adjustments for smaller screens */
+    .container {
+        padding: 30px; /* Reduced padding */
+    }
+}
